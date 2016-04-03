@@ -1,0 +1,45 @@
+﻿<Window x:Class="BestProPraNet.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BestProPraNet"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="650" Width="800" Icon="Resources/Totara_logo.png" WindowStyle="ToolWindow">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="68"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition/>
+            <RowDefinition Height="42"/>
+            
+        </Grid.RowDefinitions>
+
+        <Canvas Grid.Row="0" Background="#FEE000" FlowDirection="RightToLeft">
+            <Image Height="68" Canvas.Top="0" Canvas.Right="0" Source="Resources/Totara_logo.png" Stretch="Fill" />
+        </Canvas>
+
+        <WrapPanel Grid.Row="1" Background="Black">
+            <Label Name="msg">gygygyg</Label>
+        </WrapPanel>
+
+
+        <Canvas Grid.Row="2" Background="Black">
+            <Menu Background="{x:Null}" Foreground="White">
+                <MenuItem Header="_FOO" BorderBrush="#03A9DD" Click="foo_click" ></MenuItem>
+                <MenuItem Header="_BAR" BorderBrush="#03A9DD"></MenuItem>
+            </Menu>
+            
+        </Canvas>
+
+
+
+        <WrapPanel Grid.Row="3" Background="#03A9DD" >
+            
+                <Label  Foreground="AliceBlue" Content="Powevered by Vincent, Copyright reserved 2016."/>
+            
+        </WrapPanel>
+
+    </Grid>
+</Window>
+    
